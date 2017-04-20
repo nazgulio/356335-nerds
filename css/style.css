@@ -1,0 +1,19 @@
+body {
+  font-family: "roboto", serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #283136;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
