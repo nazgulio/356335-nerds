@@ -6,13 +6,13 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header catalog-header">
       <div class="container">
-        <div class="header-top">
+        <div class="header-top clearfix">
           <div class="header-logo">
             <img src="img/nerds-logo.png" width="160" height="65" alt="Nёrds">
           </div>
-          <nav class="main-navigation">
+           <nav class="main-navigation">
             <ul>
               <li>
                 <a href="#">Студия</a>
@@ -36,15 +36,15 @@
       </div>
     </header>
     <main class="container">
-      <div class="catalog-wrapper">
+      <div class="catalog-wrapper clearfix">
         <div class="filter">
           <form action="#" method="post">
-          <div class="filter-block">
+          <div class="filter-price">
             <p class="catalog-title">Стоимость:</p>
               <input type="range" min="1" max="15000" id="price" value="10000" step="100">
               <p>От <span class="min-price">0</span> до <span class="max-price">15000</span></p>
           </div>
-          <div class="filter-block">
+          <div class="filter-grid">
             <p class="catalog-title">Сетка</p>
               <div class="radio-filter">
                 <input type="radio" id="adapt-radio" name="grid-radio" value="adapt" checked>
@@ -59,7 +59,7 @@
                 <label for="rub-radio">Резиновая</label>
               </div>
           </div>
-          <div class="filter-block">
+          <div class="filter-feat">
             <p class="catalog-title">Особенности:</p>
               <div class="checkbox-filter">
                 <input type="checkbox" id="slider-checkbox" name="features-check1" value="slider" checked>
@@ -112,13 +112,13 @@
               </li>
             </ul>
           </div>
-          <div class="templates">
+          <div class="templates clearfix">
             <div class="template">
               <div class="template-browser"><i></i><i></i><i></i>
               </div>
               <div class="template-img">
                 <img src="img/sedona-template.jpg" width="360" height="576" alt="Sedona">
-                <div class="sedona-hover">
+                <div class="hover sedona-hover">
                   <h3 class="template-title">Sedona</h3>
                   <p>Информационный сайт для туристов</p>
                   <a href="#" class="btn price-btn">9 900 руб.</a>
@@ -130,7 +130,7 @@
               </div>
               <div class="template-img">
                 <img src="img/pink-template.jpg" width="360" height="576" alt="Pink">
-                <div class="pink-hover">
+                <div class="hover pink-hover">
                   <h3 class="template-title">Pink App</h3>
                   <p>Продуктовый лендинг приложения для iOS и Android</p>
                   <a href="#" class="btn price-btn">9 900 руб.</a>
@@ -142,7 +142,7 @@
               </div>
               <div class="template-img">
                 <img src="img/barbershop-template.jpg" width="360" height="576" alt="Barbershop Borodinski">
-                <div class="barbershop-hover">
+                <div class="hover barbershop-hover">
                   <h3 class="template-title">Barbershop</h3>
                   <p>Сайт салоны красоты. Для мужчин, да.</p>
                   <a href="#" class="btn price-btn">9 900 руб.</a>
@@ -154,7 +154,7 @@
               </div>
               <div class="template-img">
                 <img src="img/mishka-template.jpg" width="360" height="576" alt="Mishka">
-                <div class="mishka-hover">
+                <div class="hover mishka-hover">
                   <h3 class="template-title">Mishka</h3>
                   <p>Интернет-магазин вязаных игрушек</p>
                   <a href="#" class="btn price-btn">9 900 руб.</a>
@@ -166,7 +166,7 @@
               </div>
               <div class="template-img">
                 <img src="img/aplus-template.jpg" width="360" height="576" alt="A Plus">
-                <div class="aplus-hover">
+                <div class="hover aplus-hover">
                   <h3 class="template-title">A Plus</h3>
                   <p>Лендинг курсов повышения квалификации</p>
                   <a href="#" class="btn price-btn">9 900 руб.</a>
@@ -178,7 +178,7 @@
               </div>
               <div class="template-img">
                 <img src="img/kvast-template.jpg" width="360" height="576" alt="Кваст">
-                <div class="kvast-hover">
+                <div class="hover kvast-hover">
                   <h3 class="template-title">Кваст</h3>
                   <p>Промо-сайт производителя крафтового кваса</p>
                   <a href="#" class="btn price-btn">9 900 руб.</a>
@@ -205,30 +205,28 @@
         </div>
       </div>
     </main>
-    <div class="map-wrapper">
+    <div class="map-wrapper-catalog">
       <div class="map">
       </div>
       <div class="container">
         <div class="contacts">
-          <div>
             <h3 class="contacts-title">Nёrds design studio</h3>
             <p class="address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             <p class="phone-number">тел. +7 (812) 275-75-75</p>
             <a href="#" class="btn contacts-btn">Напишите нам</a>
-          </div>
         </div>
       </div>
     </div>
-    <footer>
-      <div class="container">
+    <footer class="main-footer">
+      <div class="container clearfix">
         <div class="social">
-          <a href="#" class="social-btn">
+          <a href="#" class="social-btn vk">
             <img src="#" width="79" height="79" alt="vk">
           </a>
-          <a href="#" class="social-btn">
+          <a href="#" class="social-btn facebook">
             <img src="#" width="79" height="79" alt="facebook">
           </a>
-          <a href="#" class="social-btn">
+          <a href="#" class="social-btn instagram">
             <img src="#" width="79" height="79" alt="instagram">
           </a>
         </div>
@@ -238,16 +236,22 @@
         </div>
       </div>
     </footer>
-    <div class="write-us-popup">
+    <div class="write-us-popup container">
       <b class="write-us-title">Напишите нам</b>
       <form action="#" method="post">
-        <div class="write-forms">
-          <label for="write-us-name">Ваше имя</label>
-          <input type="text" name="write-us-name" id="write-us-name" class="write-us-input" placeholder="Представьтесь, пожалуйста">
-          <label for="write-us-mail">Ваш e-mail</label>
-          <input type="text" name="write-us-mail" id="write-us-mail" class="write-us-input" placeholder="Для отправки ответа">
-          <label for="write-us-text">Текст письма</label>
-          <textarea name="write-us-text" id="write-us-text" rows="10" class="write-us-input" placeholder="В свободной форме"></textarea>
+        <div class="write-forms clearfix">
+          <div class="write-us-name">
+            <label for="write-us-name">Ваше имя</label>
+            <input type="text" name="write-us-name" id="write-us-name" class="write-us-input" placeholder="Представьтесь, пожалуйста">
+          </div>
+          <div class="write-us-mail">
+            <label for="write-us-mail">Ваш e-mail</label>
+            <input type="text" name="write-us-mail" id="write-us-mail" class="write-us-input" placeholder="Для отправки ответа">
+          </div>
+          <div class="write-us-text">
+            <label for="write-us-text">Текст письма</label>
+            <textarea name="write-us-text" id="write-us-text" rows="10" class="write-us-input write-us-text" placeholder="В свободной форме"></textarea>
+          </div>
           <input type="submit" class="btn send-btn" value="Отправить">
         </div>
       </form>

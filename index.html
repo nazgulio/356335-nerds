@@ -6,9 +6,9 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header clearfix">
       <div class="container">
-        <div class="header-top">
+        <div class="header-top clearfix">
           <div class="header-logo">
             <img src="img/nerds-logo.png" width="160" height="65" alt="Nёrds">
           </div>
@@ -33,12 +33,12 @@
           </div>
         </div>
         <div class="slider-wrapper">
-          <div class="slide expensive">
+           <div class="slide expensive">
             <b class="slide-title">Долго, дорого, скрупулезно.</b>
             <p class="slide-text">Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
             <a href="#" class="btn header-btn">Узнать больше</a>
           </div>
-          <div class="slide math">
+          <!-- <div class="slide math">
             <b class="slide-title">Любим математику, как никто другой</b>
             <p class="slide-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
             <a href="#" class="btn header-btn">Узнать больше</a>
@@ -66,29 +66,29 @@
                   </label>
                 </li>
               </ul>
-          </div>
+          </div> -->
         </div>
       </div>
     </header>
     <main class="container">
-      <div class="features">
-        <div class="features-item">
+      <div class="features clearfix">
+        <div class="features-item features-item-site">
           <h2 class="features-title">Веб-сайты</h2>
           <p class="features-content">Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
           <a href="#" class="btn order-btn order-btn-red">Заказать</a>
         </div>
-        <div class="features-item">
+        <div class="features-item features-item-apps">
           <h2 class="features-title">Приложения</h2>
           <p class="features-content">Покорите топ-10 приложений в AppStore и Google Play</p>
           <a href="#" class="btn order-btn order-btn-green">Заказать</a>
         </div>
-        <div class="features-item">
+        <div class="features-item features-item-pres">
           <h2 class="features-title">Презентации</h2>
           <p class="features-content">Вы даже не подозреваете, насколько вы изумительны!</p>
           <a href="#" class="btn order-btn order-btn-yellow">Заказать</a>
         </div>
       </div>
-      <div class="about-us">
+      <div class="about-us clearfix">
         <div class="about-left">
           <p class="about-left-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
           <p class="about-left-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -121,18 +121,26 @@
         </div>
       </div>
       <div class="partners">
-        <a href="#" class="logo">
-          <img src="img/html-academy-logo.png" width="250" height="100" alt="HTML Academy">
-        </a>
-        <a href="#" class="logo">
-          <img src="img/barbershop-logo.png" width="250" height="100" alt="Barbershop Borodinski">
-        </a>
-        <a href="#" class="logo">
-          <img src="img/pink-logo.png" width="250" height="100" alt="Pink">
-        </a>
-        <a href="#" class="logo">
-          <img src="img/mishka-logo.png" width="250" height="100" alt="Mishka">
-        </a>
+        <div class="partners-logo">
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="logo">
+            <img src="img/html-academy-logo.png" width="250" height="100" alt="HTML Academy">
+          </a>
+        </div>
+        <div class="partners-logo">
+          <a href="#" class="logo">
+            <img src="img/barbershop-logo.png" width="250" height="100" alt="Barbershop Borodinski">
+          </a>
+        </div>
+        <div class="partners-logo">
+          <a href="#" class="logo">
+            <img src="img/pink-logo.png" width="250" height="100" alt="Pink">
+          </a>
+        </div>
+        <div class="partners-logo">
+          <a href="#" class="logo">
+            <img src="img/mishka-logo.png" width="250" height="100" alt="Mishka">
+          </a>
+        </div>
       </div>
     </main>
     <div class="map-wrapper">
@@ -140,25 +148,23 @@
       </div>
       <div class="container">
         <div class="contacts">
-          <div>
             <h3 class="contacts-title">Nёrds design studio</h3>
             <p class="address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             <p class="phone-number">тел. +7 (812) 275-75-75</p>
             <a href="#" class="btn contacts-btn">Напишите нам</a>
-          </div>
         </div>
       </div>
     </div>
-    <footer>
-      <div class="container">
+    <footer class="main-footer">
+      <div class="container clearfix">
         <div class="social">
-          <a href="#" class="social-btn">
+          <a href="#" class="social-btn vk">
             <img src="#" width="79" height="79" alt="vk">
           </a>
-          <a href="#" class="social-btn">
+          <a href="#" class="social-btn facebook">
             <img src="#" width="79" height="79" alt="facebook">
           </a>
-          <a href="#" class="social-btn">
+          <a href="#" class="social-btn instagram">
             <img src="#" width="79" height="79" alt="instagram">
           </a>
         </div>
@@ -168,16 +174,22 @@
         </div>
       </div>
     </footer>
-    <div class="write-us-popup">
+    <div class="write-us-popup container">
       <b class="write-us-title">Напишите нам</b>
       <form action="#" method="post">
-        <div class="write-forms">
-          <label for="write-us-name">Ваше имя</label>
-          <input type="text" name="write-us-name" id="write-us-name" class="write-us-input" placeholder="Представьтесь, пожалуйста">
-          <label for="write-us-mail">Ваш e-mail</label>
-          <input type="text" name="write-us-mail" id="write-us-mail" class="write-us-input" placeholder="Для отправки ответа">
-          <label for="write-us-text">Текст письма</label>
-          <textarea name="write-us-text" id="write-us-text" rows="10" class="write-us-input" placeholder="В свободной форме"></textarea>
+        <div class="write-forms clearfix">
+          <div class="write-us-name">
+            <label for="write-us-name">Ваше имя</label>
+            <input type="text" name="write-us-name" id="write-us-name" class="write-us-input" placeholder="Представьтесь, пожалуйста">
+          </div>
+          <div class="write-us-mail">
+            <label for="write-us-mail">Ваш e-mail</label>
+            <input type="text" name="write-us-mail" id="write-us-mail" class="write-us-input" placeholder="Для отправки ответа">
+          </div>
+          <div class="write-us-text">
+            <label for="write-us-text">Текст письма</label>
+            <textarea name="write-us-text" id="write-us-text" rows="10" class="write-us-input write-us-text" placeholder="В свободной форме"></textarea>
+          </div>
           <input type="submit" class="btn send-btn" value="Отправить">
         </div>
       </form>
