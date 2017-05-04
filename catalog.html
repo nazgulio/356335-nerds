@@ -3,16 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header class="main-header catalog-header">
       <div class="container">
-        <div class="header-top clearfix">
+        <div class="header-top">
           <div class="header-logo">
-            <img src="img/nerds-logo.png" width="160" height="65" alt="Nёrds">
+            <a href="#"><img src="img/nerds-logo.png" width="160" height="65" alt="Nёrds"></a>
           </div>
-           <nav class="main-navigation">
+          <nav class="main-navigation">
             <ul>
               <li>
                 <a href="#">Студия</a>
@@ -21,7 +23,7 @@
                 <a href="#">Клиенты</a>
               </li>
               <li>
-                <a href="#">Магазин</a>
+                <a href="#" class="main-navigation-active">Магазин</a>
               </li>
               <li>
                 <a href="#">Контакты</a>
@@ -36,7 +38,7 @@
       </div>
     </header>
     <main class="container">
-      <div class="catalog-wrapper clearfix">
+      <div class="catalog-wrapper">
         <div class="filter">
           <form action="#" method="post">
           <div class="filter-price">
@@ -45,7 +47,7 @@
               <p>От <span class="min-price">0</span> до <span class="max-price">15000</span></p>
           </div>
           <div class="filter-grid">
-            <p class="catalog-title">Сетка</p>
+            <p class="catalog-title">Сетка:</p>
               <div class="radio-filter">
                 <input type="radio" id="adapt-radio" name="grid-radio" value="adapt" checked>
                 <label for="adapt-radio">Адаптивная</label>
@@ -88,7 +90,7 @@
         <div class="catalog-items">
           <div class="sorting">
             <b class="catalog-sorting-title">Сортировать:</b>
-            <ul>
+            <ul class="catalog-sorting">
               <li>
                 <a href="#">По цене</a>
               </li>
@@ -99,28 +101,29 @@
                 <a href="#">По названию</a>
               </li>
             </ul>
-            <ul>
+            <ul class="sorting-arrows">
               <li>
                 <a href="#">
-                  <span class="arrow-down"></span>
+                  <div class="arrow arrow-down"></div>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <span class="arrow-up"></span>
+                  <div class="arrow arrow-up"></div>
                 </a>
               </li>
             </ul>
           </div>
-          <div class="templates clearfix">
+          <div class="templates">
             <div class="template">
               <div class="template-browser"><i></i><i></i><i></i>
               </div>
               <div class="template-img">
                 <img src="img/sedona-template.jpg" width="360" height="576" alt="Sedona">
-                <div class="hover sedona-hover">
+                <div class="hover">
                   <h3 class="template-title">Sedona</h3>
-                  <p>Информационный сайт для туристов</p>
+                  <p>Информационный сайт<br>
+                    для туристов</p>
                   <a href="#" class="btn price-btn">9 900 руб.</a>
                 </div>
               </div>
@@ -132,7 +135,8 @@
                 <img src="img/pink-template.jpg" width="360" height="576" alt="Pink">
                 <div class="hover pink-hover">
                   <h3 class="template-title">Pink App</h3>
-                  <p>Продуктовый лендинг приложения для iOS и Android</p>
+                  <p>Продуктовый лендинг<br>
+                    приложения для iOS и Android</p>
                   <a href="#" class="btn price-btn">9 900 руб.</a>
                 </div>
               </div>
@@ -144,7 +148,8 @@
                 <img src="img/barbershop-template.jpg" width="360" height="576" alt="Barbershop Borodinski">
                 <div class="hover barbershop-hover">
                   <h3 class="template-title">Barbershop</h3>
-                  <p>Сайт салоны красоты. Для мужчин, да.</p>
+                  <p>Сайт салоны красоты.<br>
+                    Для мужчин, да.</p>
                   <a href="#" class="btn price-btn">9 900 руб.</a>
                 </div>
               </div>
@@ -156,7 +161,8 @@
                 <img src="img/mishka-template.jpg" width="360" height="576" alt="Mishka">
                 <div class="hover mishka-hover">
                   <h3 class="template-title">Mishka</h3>
-                  <p>Интернет-магазин вязаных игрушек</p>
+                  <p>Интернет-магазин<br>
+                    вязаных игрушек</p>
                   <a href="#" class="btn price-btn">9 900 руб.</a>
                 </div>
               </div>
@@ -168,7 +174,8 @@
                 <img src="img/aplus-template.jpg" width="360" height="576" alt="A Plus">
                 <div class="hover aplus-hover">
                   <h3 class="template-title">A Plus</h3>
-                  <p>Лендинг курсов повышения квалификации</p>
+                  <p>Лендинг курсов повышения<br>
+                    квалификации</p>
                   <a href="#" class="btn price-btn">9 900 руб.</a>
                 </div>
               </div>
@@ -180,25 +187,26 @@
                 <img src="img/kvast-template.jpg" width="360" height="576" alt="Кваст">
                 <div class="hover kvast-hover">
                   <h3 class="template-title">Кваст</h3>
-                  <p>Промо-сайт производителя крафтового кваса</p>
+                  <p>Промо-сайт производителя<br>
+                    крафтового кваса</p>
                   <a href="#" class="btn price-btn">9 900 руб.</a>
                 </div>
               </div>
             </div>
           </div>
           <div class="paginator">
-            <ul class="paginator-list">
+            <ul>
               <li>
-                <a href="#">1</a>
+                <a href="#" class="btn paginator-active-btn">1</a>
               </li>
               <li>
-                <a href="#">2</a>
+                <a href="#" class="btn paginator-numbers-btn">2</a>
               </li>
               <li>
-                <a href="#">3</a>
+                <a href="#" class="btn paginator-numbers-btn">3</a>
               </li>
               <li>
-                <a href="#">Следующая</a>
+                <a href="#" class="btn paginator-next-btn">Следующая</a>
               </li>
             </ul>
           </div>
@@ -211,46 +219,42 @@
       <div class="container">
         <div class="contacts">
             <h3 class="contacts-title">Nёrds design studio</h3>
-            <p class="address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <p class="address">191186, Санкт-Петербург,<br>
+              ул. Б. Конюшенная, д. 19/8</p>
             <p class="phone-number">тел. +7 (812) 275-75-75</p>
             <a href="#" class="btn contacts-btn">Напишите нам</a>
         </div>
       </div>
     </div>
-    <footer class="main-footer">
-      <div class="container clearfix">
-        <div class="social">
-          <a href="#" class="social-btn vk">
-            <img src="#" width="79" height="79" alt="vk">
-          </a>
-          <a href="#" class="social-btn facebook">
-            <img src="#" width="79" height="79" alt="facebook">
-          </a>
-          <a href="#" class="social-btn instagram">
-            <img src="#" width="79" height="79" alt="instagram">
-          </a>
-        </div>
-        <div class="discount">
-          <b class="footer">Давайте дружить, это выгодно!</b>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
-        </div>
+    <footer class="main-footer container">
+      <div class="social">
+        <a href="#" class="social-btn vk"></a>
+        <a href="#" class="social-btn facebook"></a>
+        <a href="#" class="social-btn instagram"></a>
+      </div>
+      <div class="discount">
+        <b class="footer-text">Давайте дружить, это выгодно!</b>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
     <div class="write-us-popup container">
       <b class="write-us-title">Напишите нам</b>
+      <a href="#">
+        <div class="close-cross"></div>
+      </a>
       <form action="#" method="post">
-        <div class="write-forms clearfix">
+        <div class="write-forms">
           <div class="write-us-name">
-            <label for="write-us-name">Ваше имя</label>
+            <label for="write-us-name">Ваше имя:</label>
             <input type="text" name="write-us-name" id="write-us-name" class="write-us-input" placeholder="Представьтесь, пожалуйста">
           </div>
           <div class="write-us-mail">
-            <label for="write-us-mail">Ваш e-mail</label>
+            <label for="write-us-mail">Ваш e-mail:</label>
             <input type="text" name="write-us-mail" id="write-us-mail" class="write-us-input" placeholder="Для отправки ответа">
           </div>
           <div class="write-us-text">
-            <label for="write-us-text">Текст письма</label>
-            <textarea name="write-us-text" id="write-us-text" rows="10" class="write-us-input write-us-text" placeholder="В свободной форме"></textarea>
+            <label for="write-us-text">Текст письма:</label>
+            <textarea name="write-us-text" id="write-us-text" rows="5" class="write-us-input" placeholder="В свободной форме"></textarea>
           </div>
           <input type="submit" class="btn send-btn" value="Отправить">
         </div>
