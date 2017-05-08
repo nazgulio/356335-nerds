@@ -5,7 +5,7 @@
     <title>HTML Academy: Нёрдс</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header class="main-header catalog-header">
@@ -40,16 +40,27 @@
     <main class="container">
       <div class="catalog-wrapper">
         <div class="filter">
-          <form action="#" method="post">
+          <form action="form.php" method="post">
           <div class="filter-price">
             <p class="catalog-title">Стоимость:</p>
-              <input type="range" min="1" max="15000" id="price" value="10000" step="100">
-              <p>От <span class="min-price">0</span> до <span class="max-price">15000</span></p>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                  <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                </div>
+              </div>
           </div>
           <div class="filter-grid">
             <p class="catalog-title">Сетка:</p>
               <div class="radio-filter">
-                <input type="radio" id="adapt-radio" name="grid-radio" value="adapt" checked>
+                <input type="radio" id="adapt-radio" name="grid-radio" class="adapt" value="adapt" checked>
                 <label for="adapt-radio">Адаптивная</label>
               </div>
               <div class="radio-filter">
@@ -103,14 +114,10 @@
             </ul>
             <ul class="sorting-arrows">
               <li>
-                <a href="#">
-                  <div class="arrow arrow-down"></div>
-                </a>
+                <a href="#" class="arrow arrow-down">Down</a>
               </li>
               <li>
-                <a href="#">
-                  <div class="arrow arrow-up"></div>
-                </a>
+                <a href="#" class="arrow arrow-up">Up</a>
               </li>
             </ul>
           </div>
@@ -213,7 +220,7 @@
         </div>
       </div>
     </main>
-    <div class="map-wrapper-catalog">
+    <div class="map-wrapper map-wrapper-catalog">
       <div class="map">
       </div>
       <div class="container">
@@ -239,9 +246,7 @@
     </footer>
     <div class="write-us-popup container">
       <b class="write-us-title">Напишите нам</b>
-      <a href="#">
-        <div class="close-cross"></div>
-      </a>
+      <a href="#" class="close-cross">Закрыть</a>
       <form action="#" method="post">
         <div class="write-forms">
           <div class="write-us-name">

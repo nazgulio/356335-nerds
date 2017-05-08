@@ -5,7 +5,7 @@
     <title>HTML Academy: Нёрдс</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -35,41 +35,39 @@
           </div>
         </div>
         <div class="slider-wrapper">
+          <input type="radio" id="btn-1" name="toggle" checked>
+          <input type="radio" id="btn-2" name="toggle">
+          <input type="radio" id="btn-3" name="toggle">
           <div class="slider-controls">
-            <input type="radio" id="btn-1" name="toggle" checked>
-            <input type="radio" id="btn-2" name="toggle">
-            <input type="radio" id="btn-3" name="toggle">
             <label for="btn-1"></label>
             <label for="btn-2"></label>
             <label for="btn-3"></label>
           </div>
-          <div class="slides">
-            <div class="slide">
-              <div class="slide-text">
-                <b class="slide-title">Долго, дорого,<br>
-                  скрупулезно.</b>
-                <p>Математически выверенный дизайн<br>
-                  для вашего сайта или мобильного приложения</p>
-                <a href="#" class="btn header-btn">Узнать больше</a>
-              </div>
+          <div class="slide slide-1">
+            <div class="slide-text">
+              <b class="slide-title">Долго, дорого,<br>
+                скрупулезно.</b>
+              <p>Математически выверенный дизайн<br>
+                для вашего сайта или мобильного приложения</p>
+              <a href="#" class="btn header-btn">Узнать больше</a>
             </div>
-            <div class="slide">
-              <div class="slide-text">
-                <b class="slide-title">Любим математику,<br>
-                  как никто другой</b>
-                <p>Никакого креатива, только математические формулы<br>
-                  для расчета идеальных пропорций.</p>
-                <a href="#" class="btn header-btn">Узнать больше</a>
-              </div>
+          </div>
+          <div class="slide slide-2">
+            <div class="slide-text">
+              <b class="slide-title">Любим математику,<br>
+                как никто другой</b>
+              <p>Никакого креатива, только математические формулы<br>
+                для расчета идеальных пропорций.</p>
+              <a href="#" class="btn header-btn">Узнать больше</a>
             </div>
-            <div class="slide">
-              <div class="slide-text">
-                <b class="slide-title">Только ночь,<br>
-                  только хардкор</b>
-                <p>Работать днем, как все? Мы против этого.<br>
-                  Ближе к полуночи работа только начинается.</p>
-                <a href="#" class="btn header-btn">Узнать больше</a>
-              </div>
+          </div>
+          <div class="slide slide-3">
+            <div class="slide-text">
+              <b class="slide-title">Только ночь,<br>
+                только хардкор</b>
+              <p>Работать днем, как все? Мы против этого.<br>
+                Ближе к полуночи работа только начинается.</p>
+              <a href="#" class="btn header-btn">Узнать больше</a>
             </div>
           </div>
         </div>
@@ -97,7 +95,8 @@
       </div>
       <div class="about-us">
         <div class="about-left">
-          <p class="about-left-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+          <p class="about-left-title">Мы — маленькая, но гордая<br>
+            дизайн-студия из Краснодара.</p>
           <p class="about-left-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
           <h3 class="about-left-list-title">Выполняем заказы на разработку:</h3>
           <ul class="about-left-list">
@@ -110,7 +109,7 @@
           <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Nёrds">
           <h3 class="about-right-title">с 2004 года любим точность во всем:</h3>
           <div class="about-right-numbers">
-            <ul class="about-right-numbers">
+            <ul>
               <li>
                 <span>146<sup>%</sup></span>
                 <p>Уровень самоотдачи</p>
@@ -129,28 +128,28 @@
       </div>
       <div class="partners">
         <div class="partners-logo">
-          <a href="https://htmlacademy.ru/intensive/htmlcss" class="logo">
-            <img src="img/html-academy-logo.png" width="250" height="100" alt="HTML Academy">
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/html-academy-logo.png" width="199" height="68" alt="HTML Academy">
+          </a>
+        </div>
+        <div class="partners-logo">
+          <a href="#">
+            <img src="img/barbershop-logo.png" width="209" height="90" alt="Barbershop Borodinski">
+          </a>
+        </div>
+        <div class="partners-logo">
+          <a href="#">
+            <img src="img/pink-logo.png" width="185" height="52" alt="Pink">
           </a>
         </div>
         <div class="partners-logo">
           <a href="#" class="logo">
-            <img src="img/barbershop-logo.png" width="250" height="100" alt="Barbershop Borodinski">
-          </a>
-        </div>
-        <div class="partners-logo">
-          <a href="#" class="logo">
-            <img src="img/pink-logo.png" width="250" height="100" alt="Pink">
-          </a>
-        </div>
-        <div class="partners-logo">
-          <a href="#" class="logo">
-            <img src="img/mishka-logo.png" width="250" height="100" alt="Mishka">
+            <img src="img/mishka-logo.png" width="173" height="84" alt="Mishka">
           </a>
         </div>
       </div>
     </main>
-    <div class="map-wrapper-catalog">
+    <div class="map-wrapper">
       <div class="map">
       </div>
       <div class="container">
@@ -176,9 +175,7 @@
     </footer>
     <div class="write-us-popup container">
       <b class="write-us-title">Напишите нам</b>
-      <a href="#">
-        <div class="close-cross"></div>
-      </a>
+      <a href="#" class="close-cross">Закрыть</a>
       <form action="#" method="post">
         <div class="write-forms">
           <div class="write-us-name">
