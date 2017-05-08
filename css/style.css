@@ -699,6 +699,33 @@ a.social-btn:active {
   margin: 10px 0 0;
 }
 
+@keyframes open-popup {
+  0%   {
+    transform: translateX(-2000px);
+  }
+  70%  {
+    transform: translateX(30px);
+  }
+  90%  {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
 .write-us-popup {
   display: none;
   box-shadow: 0 10px 40px #000000;
@@ -713,6 +740,15 @@ a.social-btn:active {
   right: 0;
   bottom: 0;
   margin:auto;
+}
+
+.write-us-popup-show {
+  display: block;
+  animation: open-popup 0.6s;
+}
+
+.write-us-popup-error {
+  animation: shake 0.6s;
 }
 
 .close-cross {
