@@ -60,39 +60,39 @@
           <div class="filter-grid">
             <p class="catalog-title">Сетка:</p>
               <div class="radio-filter">
-                <input type="radio" id="adapt-radio" name="grid-radio" value="adapt" checked>
-                <label for="adapt-radio">Адаптивная</label>
+                <input type="radio" class="radio-input" id="adapt-radio" name="grid-radio" value="adapt" checked>
+                <label for="adapt-radio" class="radio-label">Адаптивная</label>
               </div>
               <div class="radio-filter">
-                <input type="radio" id="fix-radio" name="grid-radio" value="fix">
-                <label for="fix-radio">Фиксированная</label>
+                <input type="radio" class="radio-input" id="fix-radio" name="grid-radio" value="fix">
+                <label for="fix-radio" class="radio-label">Фиксированная</label>
               </div>
               <div class="radio-filter">
-                <input type="radio" id="rub-radio" name="grid-radio" value="rub">
-                <label for="rub-radio">Резиновая</label>
+                <input type="radio" class="radio-input" id="rub-radio" name="grid-radio" value="rub">
+                <label for="rub-radio" class="radio-label">Резиновая</label>
               </div>
           </div>
           <div class="filter-feat">
             <p class="catalog-title">Особенности:</p>
               <div class="checkbox-filter">
-                <input type="checkbox" id="slider-checkbox" name="features-check1" value="slider" checked>
-                <label for="slider-checkbox">Слайдер</label>
+                <input type="checkbox" class="checkbox-input" id="slider-checkbox" name="features-check1" value="slider" checked>
+                <label for="slider-checkbox" class="checkbox-label">Слайдер</label>
               </div>
               <div class="checkbox-filter">
-                <input type="checkbox" id="feat-block-checkbox" name="features-check2" value="feat-block">
-                <label for="feat-block-checkbox">Блок преимуществ</label>
+                <input type="checkbox" class="checkbox-input" id="feat-block-checkbox" name="features-check2" value="feat-block">
+                <label for="feat-block-checkbox" class="checkbox-label">Блок преимуществ</label>
               </div>
               <div class="checkbox-filter">
-                <input type="checkbox" id="news-checkbox" name="features-check3" value="news">
-                <label for="news-checkbox">Новости</label>
+                <input type="checkbox" class="checkbox-input" id="news-checkbox" name="features-check3" value="news" checked>
+                <label for="news-checkbox" class="checkbox-label">Новости</label>
               </div>
               <div class="checkbox-filter">
-                <input type="checkbox" id="gallery-checkbox" name="features-check4" value="gallery">
-                <label for="gallery-checkbox">Галерея</label>
+                <input type="checkbox" class="checkbox-input" id="gallery-checkbox" name="features-check4" value="gallery">
+                <label for="gallery-checkbox" class="checkbox-label">Галерея</label>
               </div>
               <div class="checkbox-filter">
-                <input type="checkbox" id="cart-checkbox" name="features-check5" value="cart">
-                <label for="cart-checkbox">Корзина</label>
+                <input type="checkbox" class="checkbox-input" id="cart-checkbox" name="features-check5" value="cart">
+                <label for="cart-checkbox" class="checkbox-label">Корзина</label>
               </div>
           </div>
           <input type="submit" class="btn filter-btn" value="Показать">
@@ -204,7 +204,7 @@
           <div class="paginator">
             <ul>
               <li>
-                <a href="#" class="btn paginator-active-btn">1</a>
+                <a class="btn paginator-active-btn">1</a>
               </li>
               <li>
                 <a href="#" class="btn paginator-numbers-btn">2</a>
@@ -221,7 +221,7 @@
       </div>
     </main>
     <div class="map-wrapper map-wrapper-catalog">
-      <div class="map">
+      <div class="map" id="map">
       </div>
       <div class="container">
         <div class="contacts">
@@ -266,6 +266,8 @@
       </form>
     </div>
     <div class="popup-overlay"></div>
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/mapbasics.min.js" type="text/javascript"></script>
     <script src="js/script.min.js"></script>
   </body>
 </html>

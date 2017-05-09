@@ -9,8 +9,7 @@ var overlay = document.querySelector(".popup-overlay");
 link.addEventListener("click", function(event) {
   event.preventDefault();
   popup.classList.add("write-us-popup-show");
-  name.focus();                                              /* не работает почему-то */
-  overlay.classList.add("popup-overlay-show");               /* не работает почему-то */
+  overlay.classList.add("popup-overlay-show");
   });
 
 close.addEventListener("click", function(event) {
