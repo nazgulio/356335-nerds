@@ -4,16 +4,19 @@ var close = popup.querySelector(".close-cross");
 var name = popup.querySelector("[name=write-us-name]");
 var form = popup.querySelector("form");
 var mail = popup.querySelector("[name=write-us-mail]");
+var overlay = document.querySelector(".popup-overlay");
 
 link.addEventListener("click", function(event) {
   event.preventDefault();
   popup.classList.add("write-us-popup-show");
-  name.focus();                                                            /* не работает почему-то */
+  name.focus();                                              /* не работает почему-то */
+  overlay.classList.add("popup-overlay-show");               /* не работает почему-то */
   });
 
 close.addEventListener("click", function(event) {
   event.preventDefault();
   popup.classList.remove("write-us-popup-show");
+  overlay.classList.remove("popup-overlay-show");
   popup.classList.remove("write-us-popup-error");
   });
 
