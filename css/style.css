@@ -862,7 +862,7 @@ a.social-btn:active {
   border: 2px solid #000000;    /*в хроме еще появляется какая-то своя обводка голубая */
 }
 
-.write-us-input:invalid {
+.write-us-input:invalid {               /* валидатор ругается */
   border: 2px solid #ef8184;
   color: #f29b9d;
 }
@@ -886,7 +886,7 @@ a.social-btn:active {
 
 .range-filter {
   width: 260px;
-  padding: 50px auto;
+  padding: 50px auto;          /* валидатор ругается */
   margin-top: 52px;
 }
 
@@ -1202,8 +1202,9 @@ li.catalog-sorting-active,
 
 .template-title {
   font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
   padding: 0;
-  margin: 30px 0 0 0;
   line-height: 30px;
   font-weight: 700;
 }
@@ -1217,6 +1218,8 @@ li.catalog-sorting-active,
   background-color: #eeeeee;
   text-align: center;
   min-width: 360px;
+  padding: 30px 5px 0;
+  box-sizing: border-box;
 }
 
 .hover p {
