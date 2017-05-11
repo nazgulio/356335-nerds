@@ -87,6 +87,7 @@ a:visited {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
+  color: #000000;
 }
 
 .main-navigation-active::after {
@@ -125,6 +126,7 @@ a:visited {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
+  color: #000000;
 }
 
 .header-cart a::before {
@@ -303,6 +305,7 @@ display: block;
   border: 3px solid #dbdbdb;
   min-width: 50px;
   padding: 12px 0;
+  cursor: default;
 }
 
 .paginator-next-btn {
@@ -562,7 +565,6 @@ a.order-btn-yellow:active {
 }
 
 .partners {
-   min-height: 179px;
    display: -webkit-box;
    display: -ms-flexbox;
    display: flex;
@@ -573,14 +575,16 @@ a.order-btn-yellow:active {
  }
 
 .partners-logo {
+   min-height: 179px;
    min-width: 260px;
    text-align: center;
    position: relative;
    display: -webkit-box;
    display: -ms-flexbox;
    display: flex;
+   align-items: center;
    -ms-flex-pack: distribute;
-       justify-content: space-around;
+       justify-content: center;
    -webkit-box-orient: vertical;
    -webkit-box-direction: normal;
        -ms-flex-direction: column;
@@ -607,6 +611,7 @@ a.order-btn-yellow:active {
   width: 2px;
   background-color: #f4f4f4;
   position: absolute;
+  top: 64px;
   left: -21px;
 }
 
