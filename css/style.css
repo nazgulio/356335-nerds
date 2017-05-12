@@ -25,6 +25,10 @@ a:visited {
   color: #000000;
 }
 
+a:focus {
+  outline: 1px dashed #000000;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -283,6 +287,7 @@ display: block;
 }
 
 .btn:focus {
+  outline: 1px dashed #000000;
 }
 
 .filter-btn {
@@ -730,7 +735,9 @@ a.social-btn {
   position: relative;
 }
 
-a.social-btn:focus { }
+a.social-btn:focus {
+  outline: 1px dashed #000000;
+}
 
 a.social-btn:not(:first-child) {
   margin-left: 12px;
@@ -1136,6 +1143,10 @@ a.social-btn:active {
   background: #f1f1f1;
 }
 
+.price-controls input:focus {
+  outline: 1px dashed #000000;
+}
+
 .catalog-sorting-title {
   margin-right: 235px;
 }
@@ -1223,6 +1234,10 @@ li.catalog-sorting-active,
   cursor: pointer;
 }
 
+.radio-input:focus + .radio-label {
+  outline: 1px dashed #000000;
+}
+
 .radio-input:not(checked) {
   position: absolute;
   opacity: 0;
@@ -1275,6 +1290,10 @@ li.catalog-sorting-active,
 
 .checkbox-input + .checkbox-label {
   cursor: pointer;
+}
+
+.checkbox-input:focus + .checkbox-label {
+  outline: 1px dashed #000000;
 }
 
 .checkbox-input:not(checked) {
